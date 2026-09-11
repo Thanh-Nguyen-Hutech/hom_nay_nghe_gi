@@ -66,16 +66,16 @@ const songs = [
     { id: 49, title: "FANCY", artist: "TWICE", group: "TWICE", album: "FANCY YOU", type: "title", rarity: "gold", youtube: "https://youtu.be/kOHB85vDuow", spotify: "" },
     { id: 50, title: "Feel Special", artist: "TWICE", group: "TWICE", album: "Feel Special", type: "title", rarity: "gold", youtube: "https://youtu.be/3ymwOvzhwHs", spotify: "" },
 
-    { id: 51, title: "Like a Fool", artist: "TWICE", group: "TWICE", album: "The Story Begins", type: "b-side", rarity: "purple", youtube: "https://youtu.be/1XzR5-xO4X8", spotify: "" },
-    { id: 52, title: "Touchdown", artist: "TWICE", group: "TWICE", album: "TWICEcoaster: LANE 1", type: "b-side", rarity: "pink", youtube: "https://youtu.be/8y8z8eH1e-A", spotify: "" },
-    { id: 53, title: "1 to 10", artist: "TWICE", group: "TWICE", album: "TWICEcoaster: LANE 1", type: "b-side", rarity: "purple", youtube: "https://youtu.be/4W2M8d-2z-g", spotify: "" },
-    { id: 54, title: "JELLY JELLY", artist: "TWICE", group: "TWICE", album: "TWICEcoaster: LANE 1", type: "b-side", rarity: "purple", youtube: "https://youtu.be/1-X1Q0l08-c", spotify: "" },
-    { id: 55, title: "WOW", artist: "TWICE", group: "TWICE", album: "TWICEcoaster: LANE 2", type: "b-side", rarity: "pink", youtube: "https://youtu.be/8zG2-4H_xXw", spotify: "" },
-    { id: 56, title: "HO!", artist: "TWICE", group: "TWICE", album: "Summer Nights", type: "b-side", rarity: "pink", youtube: "https://youtu.be/5-eF0H7-s_I", spotify: "" },
-    { id: 57, title: "Shot Thru the Heart", artist: "TWICE", group: "TWICE", album: "Summer Nights", type: "b-side", rarity: "purple", youtube: "https://youtu.be/8T-Q8U-ZzLg", spotify: "" },
-    { id: 58, title: "LOVE FOOLISH", artist: "TWICE", group: "TWICE", album: "Feel Special", type: "b-side", rarity: "red", youtube: "https://youtu.be/PeFXRIJXYZo", spotify: "" }, /* FIX DEAD LINK */
-    { id: 59, title: "UP NO MORE", artist: "TWICE", group: "TWICE", album: "Eyes wide open", type: "b-side", rarity: "red", youtube: "https://youtu.be/2V2A-G0q8Kw", spotify: "" },
-    { id: 60, title: "ICON", artist: "TWICE", group: "TWICE", album: "Formula of Love", type: "b-side", rarity: "gold", youtube: "https://youtu.be/8cM2o-6Z-8w", spotify: "" },
+    { id: 51, title: "Like a Fool", artist: "TWICE", group: "TWICE", album: "The Story Begins", type: "b-side", rarity: "purple", youtube: "https://youtu.be/DFdjt6ykwTY", spotify: "" },
+    { id: 52, title: "Touchdown", artist: "TWICE", group: "TWICE", album: "TWICEcoaster: LANE 1", type: "b-side", rarity: "pink", youtube: "https://youtu.be/a2rRdbSRbRM", spotify: "" },
+    { id: 53, title: "1 to 10", artist: "TWICE", group: "TWICE", album: "TWICEcoaster: LANE 1", type: "b-side", rarity: "purple", youtube: "https://youtu.be/wXlrZpTWKgM", spotify: "" },
+    { id: 54, title: "Turtle", artist: "TWICE", group: "TWICE", album: "TWICEcoaster: LANE 2", type: "b-side", rarity: "gold", youtube: "https://youtu.be/tVv_C2fYStU", spotify: "" },
+    { id: 55, title: "WOW", artist: "TWICE", group: "TWICE", album: "TWICEcoaster: LANE 2", type: "b-side", rarity: "pink", youtube: "https://youtu.be/ngpGqFCioUI", spotify: "" },
+    { id: 56, title: "HO!", artist: "TWICE", group: "TWICE", album: "Summer Nights", type: "b-side", rarity: "pink", youtube: "https://youtu.be/3pcCmShOGes", spotify: "" },
+    { id: 57, title: "Shot Thru the Heart", artist: "TWICE", group: "TWICE", album: "Summer Nights", type: "b-side", rarity: "purple", youtube: "https://youtu.be/G0Rg1fOn9kk", spotify: "" },
+    { id: 58, title: "LOVE FOOLISH", artist: "TWICE", group: "TWICE", album: "Feel Special", type: "b-side", rarity: "red", youtube: "https://youtu.be/PeFXRIJXYZo", spotify: "" }, 
+    { id: 59, title: "UP NO MORE", artist: "TWICE", group: "TWICE", album: "Eyes wide open", type: "b-side", rarity: "red", youtube: "https://youtu.be/bq8kFdQbrNU", spotify: "" },
+    { id: 60, title: "ICON", artist: "TWICE", group: "TWICE", album: "Formula of Love", type: "b-side", rarity: "gold", youtube: "https://youtu.be/wfXETdOzYos", spotify: "" },
 
 
     /* =====================================================
@@ -85,23 +85,23 @@ const songs = [
     { id: 62, title: "LOVE DIVE", artist: "IVE", group: "IVE", album: "LOVE DIVE", type: "title", rarity: "gold", youtube: "https://youtu.be/Y8JFxS1HlDo", spotify: "" },
     { id: 63, title: "After LIKE", artist: "IVE", group: "IVE", album: "After LIKE", type: "title", rarity: "gold", youtube: "https://youtu.be/F0B7HDiY-10", spotify: "" },
     { id: 64, title: "I AM", artist: "IVE", group: "IVE", album: "I've IVE", type: "title", rarity: "gold", youtube: "https://youtu.be/6ZUIwj3FgUY", spotify: "" },
-    { id: 65, title: "Baddie", artist: "IVE", group: "IVE", album: "I've Mine", type: "title", rarity: "red", youtube: "https://youtu.be/Da4P2uT4mAQ", spotify: "" },
-    { id: 66, title: "HEYA", artist: "IVE", group: "IVE", album: "IVE SWITCH", type: "title", rarity: "red", youtube: "https://youtu.be/FJOOmp6OQpM", spotify: "" },
-    { id: 67, title: "Accendio", artist: "IVE", group: "IVE", album: "IVE SWITCH", type: "title", rarity: "pink", youtube: "https://youtu.be/xJ-Kng4YyqM", spotify: "" },
+    { id: 65, title: "Baddie", artist: "IVE", group: "IVE", album: "I've Mine", type: "title", rarity: "red", youtube: "https://youtu.be/Da4P2uT4mVc", spotify: "" },
+    { id: 66, title: "HEYA", artist: "IVE", group: "IVE", album: "IVE SWITCH", type: "title", rarity: "red", youtube: "https://youtu.be/07EzMbVH3QE", spotify: "" },
+    { id: 67, title: "Accendio", artist: "IVE", group: "IVE", album: "IVE SWITCH", type: "title", rarity: "pink", youtube: "https://youtu.be/PGLx4V680J8", spotify: "" },
     { id: 68, title: "REBEL HEART", artist: "IVE", group: "IVE", album: "IVE EMPATHY", type: "title", rarity: "red", youtube: "https://youtu.be/g36q0ZLvygQ?si=EIb7HYrhj2VAPVcg", spotify: "" },
-    { id: 69, title: "ATTITUDE", artist: "IVE", group: "IVE", album: "IVE EMPATHY", type: "title", rarity: "pink", youtube: "https://youtu.be/8O-9zX9C2mE", spotify: "" },
-    { id: 70, title: "XOXZ", artist: "IVE", group: "IVE", album: "IVE SECRET", type: "title", rarity: "red", youtube: "https://youtu.be/2k-4Z-8eK2g", spotify: "" },
+    { id: 69, title: "ATTITUDE", artist: "IVE", group: "IVE", album: "IVE EMPATHY", type: "title", rarity: "pink", youtube: "https://youtu.be/38xYeot-ciM", spotify: "" },
+    { id: 70, title: "XOXZ", artist: "IVE", group: "IVE", album: "IVE SECRET", type: "title", rarity: "red", youtube: "https://youtu.be/B1ShLiq3EVc", spotify: "" },
 
-    { id: 71, title: "Take It", artist: "IVE", group: "IVE", album: "ELEVEN", type: "b-side", rarity: "purple", youtube: "https://youtu.be/3T-C4C2mG3A", spotify: "" },
+    { id: 71, title: "Take It", artist: "IVE", group: "IVE", album: "ELEVEN", type: "b-side", rarity: "purple", youtube: "https://youtu.be/4pjWi5POJvI", spotify: "" },
     { id: 72, title: "ROYAL", artist: "IVE", group: "IVE", album: "LOVE DIVE", type: "b-side", rarity: "red", youtube: "https://youtu.be/pXbugSyo0tI", spotify: "" }, /* FIX DEAD LINK */
-    { id: 73, title: "My Satisfaction", artist: "IVE", group: "IVE", album: "After LIKE", type: "b-side", rarity: "red", youtube: "https://youtu.be/2T-J3O-8v2w", spotify: "" },
-    { id: 74, title: "Blue Blood", artist: "IVE", group: "IVE", album: "I've IVE", type: "b-side", rarity: "gold", youtube: "https://youtu.be/7T-E9w-4P2Q", spotify: "" },
+    { id: 73, title: "My Satisfaction", artist: "IVE", group: "IVE", album: "After LIKE", type: "b-side", rarity: "red", youtube: "https://youtu.be/K_ONXvktaIY", spotify: "" },
+    { id: 74, title: "Blue Blood", artist: "IVE", group: "IVE", album: "I've IVE", type: "b-side", rarity: "gold", youtube: "https://youtu.be/8ZcfwNisYso", spotify: "" },
     { id: 75, title: "Kitsch", artist: "IVE", group: "IVE", album: "I've IVE", type: "b-side", rarity: "red", youtube: "https://youtu.be/pG6iaOMV46I", spotify: "" },
-    { id: 76, title: "Hypnosis", artist: "IVE", group: "IVE", album: "I've IVE", type: "b-side", rarity: "pink", youtube: "https://youtu.be/8O-G2x-9w4c", spotify: "" },
-    { id: 77, title: "Holy Moly", artist: "IVE", group: "IVE", album: "I've Mine", type: "b-side", rarity: "pink", youtube: "https://youtu.be/3E-H2M-4d5w", spotify: "" },
+    { id: 76, title: "Hypnosis", artist: "IVE", group: "IVE", album: "I've IVE", type: "b-side", rarity: "pink", youtube: "https://youtu.be/27Tvv1JE3QU", spotify: "" },
+    { id: 77, title: "Holy Moly", artist: "IVE", group: "IVE", album: "I've Mine", type: "b-side", rarity: "pink", youtube: "https://youtu.be/YttVotuZ_Wo", spotify: "" },
     { id: 78, title: "Off The Record", artist: "IVE", group: "IVE", album: "I've Mine", type: "b-side", rarity: "red", youtube: "https://youtu.be/_ApV7Lm87cg", spotify: "" },
-    { id: 79, title: "Either Way", artist: "IVE", group: "IVE", album: "I've Mine", type: "b-side", rarity: "pink", youtube: "https://youtu.be/_Am2GhlWzAw", spotify: "" },
-    { id: 80, title: "Ice Queen", artist: "IVE", group: "IVE", album: "IVE SWITCH", type: "b-side", rarity: "purple", youtube: "https://youtu.be/2w-O-2K2J-E", spotify: "" },
+    { id: 79, title: "Either Way", artist: "IVE", group: "IVE", album: "I've Mine", type: "b-side", rarity: "pink", youtube: "https://youtu.be/_Hu4GYtye5U", spotify: "" },
+    { id: 80, title: "Ice Queen", artist: "IVE", group: "IVE", album: "IVE SWITCH", type: "b-side", rarity: "purple", youtube: "https://youtu.be/dL5nxJHIlgU", spotify: "" },
 
 
     /* =====================================================
@@ -113,7 +113,7 @@ const songs = [
     { id: 84, title: "Ditto", artist: "NewJeans", group: "NewJeans", album: "OMG", type: "title", rarity: "gold", youtube: "https://youtu.be/pSUydWEqKwE", spotify: "" },
     { id: 85, title: "OMG", artist: "NewJeans", group: "NewJeans", album: "OMG", type: "title", rarity: "gold", youtube: "https://youtu.be/sVTy_wmn5SU", spotify: "" },
     { id: 86, title: "Super Shy", artist: "NewJeans", group: "NewJeans", album: "Get Up", type: "title", rarity: "gold", youtube: "https://youtu.be/ArmDp-zijuc", spotify: "" },
-    { id: 87, title: "ETA", artist: "NewJeans", group: "NewJeans", album: "Get Up", type: "title", rarity: "red", youtube: "https://youtu.be/jOTfBlKSQAE", spotify: "" },
+    { id: 87, title: "ETA", artist: "NewJeans", group: "NewJeans", album: "Get Up", type: "title", rarity: "red", youtube: "https://youtu.be/jOTfBlKSQYY", spotify: "" },
     { id: 88, title: "Cool With You", artist: "NewJeans", group: "NewJeans", album: "Get Up", type: "title", rarity: "red", youtube: "https://youtu.be/zsYSSVoQnP4", spotify: "" },
     { id: 89, title: "How Sweet", artist: "NewJeans", group: "NewJeans", album: "How Sweet", type: "title", rarity: "red", youtube: "https://youtu.be/Q3K0TOvTOno", spotify: "" },
     { id: 90, title: "Supernatural", artist: "NewJeans", group: "NewJeans", album: "Supernatural", type: "title", rarity: "gold", youtube: "https://youtu.be/ZncbtRo7RXs", spotify: "" },
@@ -121,13 +121,13 @@ const songs = [
     { id: 91, title: "Hurt", artist: "NewJeans", group: "NewJeans", album: "New Jeans", type: "b-side", rarity: "pink", youtube: "https://youtu.be/tVIXY14aJms", spotify: "" },
     { id: 92, title: "New Jeans", artist: "NewJeans", group: "NewJeans", album: "New Jeans", type: "b-side", rarity: "purple", youtube: "https://youtu.be/kcelgrGY1h8", spotify: "" },
     { id: 93, title: "ASAP", artist: "NewJeans", group: "NewJeans", album: "Get Up", type: "b-side", rarity: "pink", youtube: "https://youtu.be/dJdqn5v4Dkw", spotify: "" },
-    { id: 94, title: "Get Up", artist: "NewJeans", group: "NewJeans", album: "Get Up", type: "b-side", rarity: "purple", youtube: "https://youtu.be/2W2w-G2O2Gk", spotify: "" },
-    { id: 95, title: "New Jeans", artist: "NewJeans", group: "NewJeans", album: "Get Up", type: "b-side", rarity: "pink", youtube: "https://youtu.be/kcelgrGY1h8", spotify: "" },
+    { id: 94, title: "Get Up", artist: "NewJeans", group: "NewJeans", album: "Get Up", type: "b-side", rarity: "purple", youtube: "https://youtu.be/SXM1q0CTfew", spotify: "" },
+    { id: 95, title: "Zero", artist: "NewJeans", group: "NewJeans", album: "Get Up", type: "b-side", rarity: "pink", youtube: "https://youtu.be/XIOoqJyx8E4", spotify: "" },
     { id: 96, title: "Gods", artist: "NewJeans", group: "NewJeans", album: "GODS", type: "b-side", rarity: "gold", youtube: "https://youtu.be/C3GouGa0noM", spotify: "" },
-    { id: 97, title: "Right Now", artist: "NewJeans", group: "NewJeans", album: "Supernatural", type: "b-side", rarity: "pink", youtube: "https://youtu.be/7T-J2P-9k7s", spotify: "" },
-    { id: 98, title: "Bubble Gum", artist: "NewJeans", group: "NewJeans", album: "How Sweet", type: "b-side", rarity: "red", youtube: "https://youtu.be/11Otw2sXnF4", spotify: "" },
-    { id: 99, title: "ASAP", artist: "NewJeans", group: "NewJeans", album: "Get Up", type: "b-side", rarity: "pink", youtube: "https://youtu.be/dJzqjcNCjcY", spotify: "" },
-    { id: 100, title: "Cool With You", artist: "NewJeans", group: "NewJeans", album: "Get Up", type: "b-side", rarity: "red", youtube: "https://youtu.be/zsYGoE1_ZyI", spotify: "" }
+    { id: 97, title: "Right Now", artist: "NewJeans", group: "NewJeans", album: "Supernatural", type: "b-side", rarity: "pink", youtube: "https://youtu.be/m6pTbEz4w3o", spotify: "" },
+    { id: 98, title: "Bubble Gum", artist: "NewJeans", group: "NewJeans", album: "How Sweet", type: "b-side", rarity: "red", youtube: "https://youtu.be/ft70sAYrFyY", spotify: "" },
+    { id: 99, title: "Heavy Serenade", artist: "NMIXX", group: "NMIXX", album: "HEAVY SERENADE", type: "title", rarity: "gold", youtube: "https://youtu.be/6Ycn9qZK09I", spotify: "" },
+    { id: 100, title: "Blue Valentine", artist: "NMIXX", group: "NMIXX", album: "BLUE VALENTINE", type: "title", rarity: "gold", youtube: "https://youtu.be/EmeW6li6bbo", spotify: "" }
 ];
 
 /* =====================================================
