@@ -1,0 +1,461 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: #0f1115;
+    color: #e2e8f0;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    text-align: center;
+    padding: 40px 20px 10px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 38px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #f8fafc;
+}
+
+.header p {
+    margin-top: 8px;
+    color: #94a3b8;
+    font-size: 15px;
+}
+
+/* =========================
+   MODE SELECTOR
+========================= */
+
+.mode-section {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
+
+.mode-btn {
+    padding: 10px 24px;
+    border: 1px solid #2d333b;
+    border-radius: 6px;
+    background: #161b22;
+    color: #94a3b8;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.mode-btn:hover {
+    background: #21262d;
+    color: #f8fafc;
+    border-color: #444c56;
+}
+
+.mode-btn.active {
+    color: #ffffff;
+    border-color: #3b82f6;
+    background: #1e293b;
+    box-shadow: 0 0 12px rgba(59, 130, 246, 0.35);
+}
+
+/* =========================
+   RANDOM BUTTON
+========================= */
+
+.random-section {
+    text-align: center;
+    margin: 30px 0 50px;
+}
+
+.random-btn {
+    padding: 14px 48px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    border: 1px solid #3b82f6;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(37, 99, 235, 0.4);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.random-btn:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 6px 24px rgba(37, 99, 235, 0.6);
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+.random-btn:active {
+    transform: translateY(0) scale(0.98);
+}
+
+.random-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* =========================
+   INVENTORY / SHOW ALL
+========================= */
+
+.inventory-section {
+    width: 95%;
+    max-width: 1400px;
+    margin: 40px auto 80px;
+    background: #0f1319;
+    border: 1px solid #1a2230;
+    border-radius: 16px;
+    padding: 30px 24px;
+}
+
+.inventory-section h2,
+.section-title {
+    margin: 0 0 24px 8px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #e2e8f0;
+    letter-spacing: 0.5px;
+}
+
+/* Lưới 6 cột chuẩn tỷ lệ responsive */
+.inventory,
+.inventory-grid {
+    display: grid !important;
+    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+    gap: 16px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* Thẻ card đứng bo góc */
+.inventory-card {
+    background: #19202c !important;
+    border: 1px solid #232c3d !important;
+    border-radius: 12px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+    position: relative !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+    transition: transform 0.2s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.inventory-card:hover {
+    transform: translateY(-4px);
+    border-color: #344259 !important;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.6);
+}
+
+/* Vùng chứa ảnh với nền phát sáng nhẹ */
+.card-preview {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    background: radial-gradient(circle at center, #263245 0%, #121721 80%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.card-preview img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 8px;
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.45));
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.inventory-card:hover .card-preview img {
+    transform: scale(1.04);
+}
+
+/* Khối thông tin văn bản */
+.card-details {
+    padding: 14px 14px 12px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+
+.card-category {
+    font-size: 11px;
+    color: #64748b;
+    font-weight: 500;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-title {
+    margin: 0 0 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #f1f5f9;
+    line-height: 1.35;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Chân thẻ chứa tag và viền dạ quang */
+.card-footer {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+}
+
+/* Thanh line màu phát sáng đáy card */
+.card-footer::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: -14px;
+    right: -14px;
+    height: 3px;
+    background: #3b82f6;
+    opacity: 0.85;
+}
+
+.card-sub {
+    font-size: 12px;
+    font-weight: 600;
+    color: #cbd5e1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-badge {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    white-space: nowrap;
+}
+
+/* =========================================
+   MÀU ĐỘ HIẾM
+========================================= */
+
+/* Gold - Legendary (Vàng kim) */
+.rarity-gold .card-footer::after { background: #eab308; box-shadow: 0 -1px 8px rgba(234, 179, 8, 0.6); }
+.rarity-gold .card-badge { color: #facc15; }
+
+/* Red - Epic (Đỏ thẫm) */
+.rarity-red .card-footer::after { background: #ef4444; box-shadow: 0 -1px 8px rgba(239, 68, 68, 0.6); }
+.rarity-red .card-badge { color: #f87171; }
+
+/* Pink - Rare (Hồng dạ quang) */
+.rarity-pink .card-footer::after { background: #ec4899; box-shadow: 0 -1px 8px rgba(236, 72, 153, 0.6); }
+.rarity-pink .card-badge { color: #f472b6; }
+
+/* Purple - Hiếm (Tím neon) */
+.rarity-purple .card-footer::after { background: #a855f7; box-shadow: 0 -1px 8px rgba(168, 85, 247, 0.6); }
+.rarity-purple .card-badge { color: #c084fc; }
+
+/* Blue - Normal / Common (Xanh dương) */
+.rarity-blue .card-footer::after { background: #38bdf8; box-shadow: 0 -1px 8px rgba(56, 189, 248, 0.6); }
+.rarity-blue .card-badge { color: #38bdf8; }
+
+/* =========================================
+   MODAL POP-UP
+========================================= */
+
+.modal-overlay,
+.modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(4, 6, 9, 0.85);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+}
+
+.modal-overlay.show,
+.modal:not(.hidden) {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 480px;
+    padding: 24px;
+    text-align: center;
+    background: #161a22;
+    border: 1px solid #2d3442;
+    border-radius: 14px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+    transform: scale(0.92) translateY(12px);
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-overlay.show .modal-content,
+.modal:not(.hidden) .modal-content {
+    transform: scale(1) translateY(0);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.modal-content img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 12px 0 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content h1,
+#modalTitle {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.modal-content h2,
+#modalSubtitle {
+    margin: 8px 0 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #94a3b8;
+}
+
+.modal-content p {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.modal-rarity,
+.result-rarity {
+    display: inline-block;
+    padding: 4px 14px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    background: #232936;
+    border: 1px solid #3b4455;
+    color: #ffffff;
+}
+
+.rarity-gold .modal-rarity, .rarity-gold .result-rarity { color: #fef08a; border-color: #eab308; box-shadow: 0 0 10px rgba(234, 179, 8, 0.3); }
+.rarity-red .modal-rarity, .rarity-red .result-rarity { color: #fca5a5; border-color: #ef4444; box-shadow: 0 0 10px rgba(239, 68, 68, 0.3); }
+.rarity-pink .modal-rarity, .rarity-pink .result-rarity { color: #fbcfe8; border-color: #ec4899; box-shadow: 0 0 10px rgba(236, 72, 153, 0.3); }
+.rarity-purple .modal-rarity, .rarity-purple .result-rarity { color: #e9d5ff; border-color: #a855f7; box-shadow: 0 0 10px rgba(168, 85, 247, 0.3); }
+.rarity-blue .modal-rarity, .rarity-blue .result-rarity { color: #bfdbfe; border-color: #3b82f6; box-shadow: 0 0 10px rgba(59, 130, 246, 0.3); }
+
+.close-btn,
+.close-modal {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    border: none;
+    background: transparent;
+    color: #94a3b8;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    transition: color 0.15s ease;
+}
+
+.close-btn:hover,
+.close-modal:hover {
+    color: #ffffff;
+}
+
+.accept-btn {
+    margin-top: 18px;
+    background: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.15s ease;
+}
+
+.accept-btn:hover {
+    background: #1d4ed8;
+}
+
+/* =========================
+   RESPONSIVE MÀN HÌNH
+========================= */
+
+.hidden {
+    display: none !important;
+}
+
+@media (max-width: 1300px) {
+    .inventory, .inventory-grid { grid-template-columns: repeat(5, minmax(0, 1fr)) !important; }
+}
+
+@media (max-width: 1080px) {
+    .inventory, .inventory-grid { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
+}
+
+@media (max-width: 820px) {
+    .inventory, .inventory-grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 12px !important; }
+    .inventory-section { padding: 20px 14px; }
+}
+
+@media (max-width: 540px) {
+    .inventory, .inventory-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 10px !important; }
+    .card-details { padding: 10px; }
+    .card-footer::after { bottom: -10px; left: -10px; right: -10px; }
+}

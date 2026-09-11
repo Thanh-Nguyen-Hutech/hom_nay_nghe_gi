@@ -1,0 +1,127 @@
+/* =========================
+   BLUE
+========================= */
+
+.song-card.blue {
+
+    border-color:
+        #4b9cff;
+
+}
+
+
+/* =========================
+   PURPLE
+========================= */
+
+.song-card.purple {
+
+    border-color:
+        #9b59ff;
+
+    box-shadow:
+        0 0 10px
+        rgba(155, 89, 255, .4);
+
+}
+
+
+/* =========================
+   PINK
+========================= */
+
+.song-card.pink {
+
+    border-color:
+        #e85cff;
+
+    box-shadow:
+        0 0 10px
+        rgba(232, 92, 255, .5);
+
+}
+
+
+/* =========================
+   RED
+========================= */
+
+.song-card.red {
+
+    border-color:
+        #ff4655;
+
+    box-shadow:
+        0 0 15px
+        rgba(255, 70, 85, .6);
+
+}
+
+
+/* =========================
+   GOLD
+========================= */
+
+.song-card.gold {
+
+    border-color:
+        #ffd700;
+
+    box-shadow:
+        0 0 10px gold,
+        0 0 25px
+        rgba(255, 215, 0, .7);
+
+}
+
+.result-card {
+
+    animation:
+        resultReveal
+        .6s
+        ease-out;
+
+}
+
+
+@keyframes resultReveal {
+
+    0% {
+
+        transform:
+            scale(.3);
+
+        opacity: 0;
+
+    }
+
+    60% {
+
+        transform:
+            scale(1.1);
+
+        opacity: 1;
+
+    }
+
+    100% {
+
+        transform:
+            scale(1);
+
+        opacity: 1;
+
+    }
+
+}
+
+.result-card:has(
+    .result-rarity
+) {
+
+    animation:
+        resultReveal
+        .6s
+        ease-out;
+
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Pop Randomizer</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reel.css">
+    <link rel="stylesheet" href="css/animation.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header class="header">
+        <h1>K-POP RANDOMIZER</h1>
+        <p>What song will you get?</p>
+    </header>
+
+
+    <!-- =========================
+         MODE SELECTOR
+    ========================== -->
+    <section class="mode-section">
+        <button class="mode-btn active" data-mode="song">SONG</button>
+        <button class="mode-btn" data-mode="idol">IDOL</button>
+        <button class="mode-btn" data-mode="group">GROUP</button>
+        <button class="mode-btn" data-mode="album">ALBUM</button>
+    </section>
+
+
+    <!-- =========================
+         CASE / REEL
+    ========================== -->
+    <main>
+        <section class="case-container">
+            <div class="pointer"></div>
+            <div class="reel-window">
+                <div id="reel" class="reel">
+                    <!-- JS generate -->
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =========================
+             RANDOM BUTTON
+        ========================== -->
+        <div class="random-section">
+            <button id="randomBtn" class="random-btn">
+                🎲 RANDOM
+            </button>
+        </div>
+
+
+        <!-- =========================
+             INVENTORY (SHOW ALL THẺ TRONG HÒM)
+        ========================== -->
+        <section class="inventory-section">
+            <h2 class="section-title">Vật phẩm trong hòm</h2>
+            <div id="inventory" class="inventory-grid">
+                <!-- JS render tất cả bài hát -->
+            </div>
+        </section>
+    </main>
+
+
+    <!-- =========================
+         RESULT MODAL (POP-UP GACHA)
+    ========================== -->
+    <div id="resultModal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button id="closeModalBtn" class="close-btn" type="button" aria-label="Đóng">&times;</button>
+            <div class="modal-header">
+                <span id="modalRarity" class="modal-rarity">RARITY</span>
+            </div>
+
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="Result Card">
+                <h1 id="modalTitle">SONG TITLE</h1>
+                <h2 id="modalSubtitle">GROUP NAME</h2>
+            </div>
+
+            <button id="acceptModalBtn" class="accept-btn" type="button">XÁC NHẬN</button>
+        </div>
+    </div>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+    <script src="data/songs.js"></script>
+    <script src="js/random.js"></script>
+    <script src="js/sound.js"></script>
+    <script src="js/inventory.js"></script>
+    <script src="js/reel.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
