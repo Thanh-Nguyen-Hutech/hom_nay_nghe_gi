@@ -3,25 +3,25 @@ const songs = [
     /* =====================================================
        NMIXX
     ===================================================== */
-    { id: 1, title: "O.O", artist: "NMIXX", group: "NMIXX", album: "AD MARE", type: "title", rarity: "red", youtube: "https://youtu.be/3GWscde8LSY", spotify: "" },
+    { id: 1, title: "O.O", artist: "NMIXX", group: "NMIXX", album: "AD MARE", type: "title", rarity: "red", youtube: "https://youtu.be/3GWscde8rM8", spotify: "" },
     { id: 2, title: "DICE", artist: "NMIXX", group: "NMIXX", album: "ENTWURF", type: "title", rarity: "red", youtube: "https://youtu.be/p1bjnyDqI9k", spotify: "" },
-    { id: 3, title: "Love Me Like This", artist: "NMIXX", group: "NMIXX", album: "expérgo", type: "title", rarity: "pink", youtube: "https://youtu.be/EDbwNBQMAzE", spotify: "" },
-    { id: 4, title: "Party O'Clock", artist: "NMIXX", group: "NMIXX", album: "A Midsummer NMIXX's Dream", type: "title", rarity: "pink", youtube: "https://youtu.be/Xyje3i9Rj1s", spotify: "" },
-    { id: 5, title: "DASH", artist: "NMIXX", group: "NMIXX", album: "Fe3O4: BREAK", type: "title", rarity: "red", youtube: "https://youtu.be/7UecFm_bSTU", spotify: "" },
-    { id: 6, title: "See that?", artist: "NMIXX", group: "NMIXX", album: "Fe3O4: STICK OUT", type: "title", rarity: "red", youtube: "https://youtu.be/cZ4zZ8G2uG4", spotify: "" },
+    { id: 3, title: "Love Me Like This", artist: "NMIXX", group: "NMIXX", album: "expérgo", type: "title", rarity: "pink", youtube: "https://youtu.be/EDnwWcFpObo", spotify: "" },
+    { id: 4, title: "Party O'Clock", artist: "NMIXX", group: "NMIXX", album: "A Midsummer NMIXX's Dream", type: "title", rarity: "pink", youtube: "https://youtu.be/Rd2wppggYxo", spotify: "" },
+    { id: 5, title: "DASH", artist: "NMIXX", group: "NMIXX", album: "Fe3O4: BREAK", type: "title", rarity: "gold", youtube: "https://youtu.be/7UecFm_bSTU", spotify: "" },
+    { id: 6, title: "See that?", artist: "NMIXX", group: "NMIXX", album: "Fe3O4: STICK OUT", type: "title", rarity: "red", youtube: "https://youtu.be/_Q8Jskeps9w", spotify: "" },
     { id: 7, title: "KNOW ABOUT ME", artist: "NMIXX", group: "NMIXX", album: "Fe3O4: FORWARD", type: "title", rarity: "pink", youtube: "https://youtu.be/aFrQIJ5cbRc", spotify: "" },
-    { id: 8, title: "Love Is Lonely", artist: "NMIXX", group: "NMIXX", album: "Fe3O4: BREAK", type: "title", rarity: "purple", youtube: "https://youtu.be/zhrT1cmQ9zA", spotify: "" },
+    { id: 8, title: "Love Is Lonely", artist: "NMIXX", group: "NMIXX", album: "Fe3O4: BREAK", type: "title", rarity: "red", youtube: "https://youtu.be/zhrT1cmQ9zA", spotify: "" },
     { id: 9, title: "Young, Dumb, Stupid", artist: "NMIXX", group: "NMIXX", album: "expérgo", type: "title", rarity: "purple", youtube: "https://youtu.be/5eh6Vj_vVg4", spotify: "" },
-    { id: 10, title: "Soñar (Breaker)", artist: "NMIXX", group: "NMIXX", album: "Fe3O4: BREAK", type: "title", rarity: "pink", youtube: "https://youtu.be/MMtRxcy8PX0", spotify: "" }, /* FIX DEAD LINK */
+    { id: 10, title: "Soñar (Breaker)", artist: "NMIXX", group: "NMIXX", album: "Fe3O4: BREAK", type: "title", rarity: "gold", youtube: "https://youtu.be/MMtRxcy8PX0", spotify: "" }, /* FIX DEAD LINK */
 
     { id: 11, title: "Tank", artist: "NMIXX", group: "NMIXX", album: "AD MARE", type: "b-side", rarity: "pink", youtube: "https://youtu.be/kY1zVcDhUSU", spotify: "" },
     { id: 12, title: "LOUD", artist: "NMIXX", group: "NMIXX", album: "HEAVY SERENADE", type: "b-side", rarity: "gold", youtube: "https://youtu.be/e7t8JzqVXcs", spotify: "" },
-    { id: 13, title: "Cool (Your Rainbow)", artist: "NMIXX", group: "NMIXX", album: "ENTWURF", type: "b-side", rarity: "pink", youtube: "https://youtu.be/4wKU9oIXnTI", spotify: "" },
-    { id: 14, title: "Kiss", artist: "NMIXX", group: "NMIXX", album: "ENTWURF", type: "b-side", rarity: "purple", youtube: "https://youtu.be/cKkVGikfQ6M", spotify: "" },
-    { id: 15, title: "Love Me Like This", artist: "NMIXX", group: "NMIXX", album: "expérgo", type: "b-side", rarity: "pink", youtube: "https://youtu.be/EDbwNBQMAzE", spotify: "" },
-    { id: 16, title: "My Gosh", artist: "NMIXX", group: "NMIXX", album: "expérgo", type: "b-side", rarity: "purple", youtube: "https://youtu.be/qQ1W9y2Z4K8", spotify: "" },
-    { id: 17, title: "Passionfruit", artist: "NMIXX", group: "NMIXX", album: "A Midsummer NMIXX's Dream", type: "b-side", rarity: "pink", youtube: "https://youtu.be/7Kx8V9j5Y5w", spotify: "" },
-    { id: 18, title: "Roller Coaster", artist: "NMIXX", group: "NMIXX", album: "A Midsummer NMIXX's Dream", type: "b-side", rarity: "pink", youtube: "https://youtu.be/K1x9aZk4aE4", spotify: "" },
+    { id: 13, title: "Cool (Your Rainbow)", artist: "NMIXX", group: "NMIXX", album: "ENTWURF", type: "b-side", rarity: "red", youtube: "https://youtu.be/4wKU9oIXnTI", spotify: "" },
+    { id: 14, title: "Ocean", artist: "NMIXX", group: "NMIXX", album: "Fe3O4: FORWARD", type: "b-side", rarity: "gold", youtube: "https://youtu.be/JLUqbQJswyA", spotify: "" },
+    { id: 15, title: "Papillon", artist: "NMIXX", group: "NMIXX", album: "Fe3O4: FORWARD", type: "b-side", rarity: "red", youtube: "https://youtu.be/qQhEwaHszKo", spotify: "" },
+    { id: 16, title: "My Gosh", artist: "NMIXX", group: "NMIXX", album: "expérgo", type: "b-side", rarity: "purple", youtube: "https://youtu.be/4q3JKyLc4xA", spotify: "" },
+    { id: 17, title: "Phoenix", artist: "NMIXX", group: "NMIXX", album: "Blue Valentine", type: "b-side", rarity: "red", youtube: "https://youtu.be/dgeH9vxwYss", spotify: "" },
+    { id: 18, title: "Roller Coaster", artist: "NMIXX", group: "NMIXX", album: "A Midsummer NMIXX's Dream", type: "b-side", rarity: "pink", youtube: "https://youtu.be/fqBAzCH4-9g", spotify: "" },
     { id: 19, title: "Run For Roses", artist: "NMIXX", group: "NMIXX", album: "Fe3O4: BREAK", type: "b-side", rarity: "red", youtube: "https://youtu.be/h00DpJn_ldM", spotify: "" }, /* FIX DEAD LINK */
     { id: 20, title: "BOOM", artist: "NMIXX", group: "NMIXX", album: "Fe3O4: BREAK", type: "b-side", rarity: "purple", youtube: "https://youtu.be/h-7ag-IkUdE", spotify: "" },
 
@@ -31,7 +31,7 @@ const songs = [
     ===================================================== */
     { id: 21, title: "LATATA", artist: "(G)I-DLE", group: "(G)I-DLE", album: "I Am", type: "title", rarity: "red", youtube: "https://youtu.be/9mQk7Evt6Vs", spotify: "" },
     { id: 22, title: "HANN (Alone)", artist: "(G)I-DLE", group: "(G)I-DLE", album: "HANN", type: "title", rarity: "red", youtube: "https://youtu.be/OKNXn2qCEws", spotify: "" },
-    { id: 23, title: "Senorita", artist: "(G)I-DLE", group: "(G)I-DLE", album: "I Made", type: "title", rarity: "pink", youtube: "https://youtu.be/GElGqO2Jq0A", spotify: "" },
+    { id: 23, title: "Senorita", artist: "(G)I-DLE", group: "(G)I-DLE", album: "I Made", type: "title", rarity: "pink", youtube: "https://youtu.be/2cevbhEqQF4", spotify: "" },
     { id: 24, title: "Oh my god", artist: "(G)I-DLE", group: "(G)I-DLE", album: "I Trust", type: "title", rarity: "red", youtube: "https://youtu.be/om3n2ni8luE", spotify: "" },
     { id: 25, title: "HWAA", artist: "(G)I-DLE", group: "(G)I-DLE", album: "I Burn", type: "title", rarity: "red", youtube: "https://youtu.be/z3szNvgQxHo", spotify: "" },
     { id: 26, title: "TOMBOY", artist: "(G)I-DLE", group: "(G)I-DLE", album: "I NEVER DIE", type: "title", rarity: "gold", youtube: "https://youtu.be/Jh4QFaPmdss", spotify: "" },
@@ -40,27 +40,27 @@ const songs = [
     { id: 29, title: "Super Lady", artist: "(G)I-DLE", group: "(G)I-DLE", album: "2", type: "title", rarity: "red", youtube: "https://youtu.be/6f3RzjXPQwA", spotify: "" },
     { id: 30, title: "Klaxon", artist: "(G)I-DLE", group: "(G)I-DLE", album: "I SWAY", type: "title", rarity: "pink", youtube: "https://youtu.be/rTKqSmX9XhQ", spotify: "" },
 
-    { id: 31, title: "Maze", artist: "(G)I-DLE", group: "(G)I-DLE", album: "I Am", type: "b-side", rarity: "purple", youtube: "https://youtu.be/Qy8r9jL3MHg", spotify: "" },
-    { id: 32, title: "What's in Your House?", artist: "(G)I-DLE", group: "(G)I-DLE", album: "I Am", type: "b-side", rarity: "purple", youtube: "https://youtu.be/4L_Uv6XWzL8", spotify: "" },
-    { id: 33, title: "Put It Straight", artist: "(G)I-DLE", group: "(G)I-DLE", album: "I Made", type: "b-side", rarity: "pink", youtube: "https://youtu.be/W8s5Yk7RjEw", spotify: "" },
-    { id: 34, title: "Maybe", artist: "(G)I-DLE", group: "(G)I-DLE", album: "I Trust", type: "b-side", rarity: "purple", youtube: "https://youtu.be/K9sXz9z3R-s", spotify: "" },
-    { id: 35, title: "Dahlia", artist: "(G)I-DLE", group: "(G)I-DLE", album: "I Burn", type: "b-side", rarity: "red", youtube: "https://youtu.be/D5R-5V8R0F4", spotify: "" },
-    { id: 36, title: "Already", artist: "(G)I-DLE", group: "(G)I-DLE", album: "I NEVER DIE", type: "b-side", rarity: "pink", youtube: "https://youtu.be/U0bXW8aO-L0", spotify: "" },
-    { id: 37, title: "Villain Dies", artist: "(G)I-DLE", group: "(G)I-DLE", album: "I NEVER DIE", type: "b-side", rarity: "pink", youtube: "https://youtu.be/P5zD5Xw8C_s", spotify: "" },
-    { id: 38, title: "Escape", artist: "(G)I-DLE", group: "(G)I-DLE", album: "I NEVER DIE", type: "b-side", rarity: "purple", youtube: "https://youtu.be/8b7-N3lY9-E", spotify: "" },
-    { id: 39, title: "All Night", artist: "(G)I-DLE", group: "(G)I-DLE", album: "I feel", type: "b-side", rarity: "pink", youtube: "https://youtu.be/4L-M4j8b-oQ", spotify: "" },
-    { id: 40, title: "Fate", artist: "(G)I-DLE", group: "(G)I-DLE", album: "2", type: "b-side", rarity: "gold", youtube: "https://youtu.be/kM-zV78gKik", spotify: "" },
+    { id: 31, title: "Maze", artist: "(G)I-DLE", group: "(G)I-DLE", album: "I Am", type: "b-side", rarity: "purple", youtube: "https://youtu.be/klKKrmRY2R8", spotify: "" },
+    { id: 32, title: "What's in Your House?", artist: "(G)I-DLE", group: "(G)I-DLE", album: "I Am", type: "b-side", rarity: "purple", youtube: "https://youtu.be/ehXwFRCvTa8", spotify: "" },
+    { id: 33, title: "Put It Straight", artist: "(G)I-DLE", group: "(G)I-DLE", album: "I Made", type: "b-side", rarity: "pink", youtube: "https://youtu.be/SBtF_e6XWnc", spotify: "" },
+    { id: 34, title: "Maybe", artist: "(G)I-DLE", group: "(G)I-DLE", album: "I Trust", type: "b-side", rarity: "purple", youtube: "https://youtu.be/k8pEDdNUvzI", spotify: "" },
+    { id: 35, title: "Dahlia", artist: "(G)I-DLE", group: "(G)I-DLE", album: "I Burn", type: "b-side", rarity: "red", youtube: "https://youtu.be/adl0yFg8Ntc", spotify: "" },
+    { id: 36, title: "Already", artist: "(G)I-DLE", group: "(G)I-DLE", album: "I NEVER DIE", type: "b-side", rarity: "pink", youtube: "https://youtu.be/_2iwrMT2r5s", spotify: "" },
+    { id: 37, title: "Villain Dies", artist: "(G)I-DLE", group: "(G)I-DLE", album: "I NEVER DIE", type: "b-side", rarity: "pink", youtube: "https://youtu.be/jYkvghyX_mo", spotify: "" },
+    { id: 38, title: "Escape", artist: "(G)I-DLE", group: "(G)I-DLE", album: "I NEVER DIE", type: "b-side", rarity: "purple", youtube: "https://youtu.be/7UQ7AVKsYvc", spotify: "" },
+    { id: 39, title: "All Night", artist: "(G)I-DLE", group: "(G)I-DLE", album: "I feel", type: "b-side", rarity: "pink", youtube: "https://youtu.be/iOoeLYqx3yI", spotify: "" },
+    { id: 40, title: "Fate", artist: "(G)I-DLE", group: "(G)I-DLE", album: "2", type: "b-side", rarity: "gold", youtube: "https://youtu.be/ATK7gAaZTOM", spotify: "" },
 
 
     /* =====================================================
        TWICE
     ===================================================== */
-    { id: 41, title: "Like OOH-AHH", artist: "TWICE", group: "TWICE", album: "The Story Begins", type: "title", rarity: "red", youtube: "https://youtu.be/0rtV5esQT6I", spotify: "" },
-    { id: 42, title: "CHEER UP", artist: "TWICE", group: "TWICE", album: "Page Two", type: "title", rarity: "gold", youtube: "https://youtu.be/c7rCyll5AeY", spotify: "" },
-    { id: 43, title: "TT", artist: "TWICE", group: "TWICE", album: "TWICEcoaster: LANE 1", type: "title", rarity: "gold", youtube: "https://youtu.be/ePpPVE-GGJw", spotify: "" },
-    { id: 44, title: "KNOCK KNOCK", artist: "TWICE", group: "TWICE", album: "TWICEcoaster: LANE 2", type: "title", rarity: "red", youtube: "https://youtu.be/8A2t_tAjMz8", spotify: "" },
-    { id: 45, title: "SIGNAL", artist: "TWICE", group: "TWICE", album: "Signal", type: "title", rarity: "red", youtube: "https://youtu.be/VQtonf1fv_s", spotify: "" },
-    { id: 46, title: "What is Love?", artist: "TWICE", group: "TWICE", album: "What is Love?", type: "title", rarity: "gold", youtube: "https://youtu.be/i0p1bmr0EmE", spotify: "" },
+    { id: 41, title: "Like OOH-AHH", artist: "TWICE", group: "TWICE", album: "The Story Begins", type: "title", rarity: "red", youtube: "https://youtu.be/904UMBcnaC4", spotify: "" },
+    { id: 42, title: "CHEER UP", artist: "TWICE", group: "TWICE", album: "Page Two", type: "title", rarity: "gold", youtube: "https://youtu.be/8tgs9Oq-7a4", spotify: "" },
+    { id: 43, title: "TT", artist: "TWICE", group: "TWICE", album: "TWICEcoaster: LANE 1", type: "title", rarity: "gold", youtube: "https://youtu.be/0kFysgVv9ZQ", spotify: "" },
+    { id: 44, title: "KNOCK KNOCK", artist: "TWICE", group: "TWICE", album: "TWICEcoaster: LANE 2", type: "title", rarity: "red", youtube: "https://youtu.be/yi_OCnQIL_g", spotify: "" },
+    { id: 45, title: "SIGNAL", artist: "TWICE", group: "TWICE", album: "Signal", type: "title", rarity: "red", youtube: "https://youtu.be/TRijPlol9D8", spotify: "" },
+    { id: 46, title: "What is Love?", artist: "TWICE", group: "TWICE", album: "What is Love?", type: "title", rarity: "gold", youtube: "https://youtu.be/8FiRcFUurNE", spotify: "" },
     { id: 47, title: "Dance The Night Away", artist: "TWICE", group: "TWICE", album: "Summer Nights", type: "title", rarity: "red", youtube: "https://youtu.be/Fm5iP0S1z9w", spotify: "" },
     { id: 48, title: "YES or YES", artist: "TWICE", group: "TWICE", album: "YES or YES", type: "title", rarity: "pink", youtube: "https://youtu.be/mAKsZ26SabQ", spotify: "" },
     { id: 49, title: "FANCY", artist: "TWICE", group: "TWICE", album: "FANCY YOU", type: "title", rarity: "gold", youtube: "https://youtu.be/kOHB85vDuow", spotify: "" },
