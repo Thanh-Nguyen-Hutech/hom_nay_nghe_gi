@@ -53,13 +53,23 @@ function generateReel(winner) {
 
     reel.innerHTML = "";
 
+    // 1. Lọc danh sách bài hát nền (filler cards) theo thể loại đang chọn
+    let genrePool = typeof songs !== "undefined" ? songs : [];
+    if (typeof currentMode !== "undefined") {
+        const filtered = genrePool.filter(song => song.genre === currentMode);
+        if (filtered.length > 0) {
+            genrePool = filtered;
+        }
+    }
+
+    // 2. Rải thẻ bài lên băng chuyền
     for (let i = 0; i < REEL_SIZE; i++) {
         let song;
 
         if (i === WINNER_INDEX) {
             song = winner;
         } else {
-            song = songs[Math.floor(Math.random() * songs.length)];
+            song = genrePool[Math.floor(Math.random() * genrePool.length)];
         }
 
         const card = createSongCard(song);

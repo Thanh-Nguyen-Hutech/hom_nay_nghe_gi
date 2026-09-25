@@ -1,4 +1,4 @@
-let currentMode = "song";
+let currentMode = "kpop";
 
 /* =========================================
    RANDOM CONTROLLER
@@ -12,7 +12,7 @@ function randomize() {
     const winner = getWinnerByMode();
 
     if (!winner) {
-        alert("Không tìm thấy dữ liệu bài hát!");
+        alert("Không tìm thấy dữ liệu bài hát cho thể loại này!");
         return;
     }
 
@@ -22,14 +22,15 @@ function randomize() {
 }
 
 function getWinnerByMode() {
+    // Cập nhật lại các case theo thể loại nhạc
     switch (currentMode) {
-        case "song":
+        case "kpop":
             return getRandomSong();
-        case "idol":
+        case "vpop":
             return getRandomSong();
-        case "group":
+        case "rapviet":
             return getRandomSong();
-        case "album":
+        case "usuk":
             return getRandomSong();
         default:
             return getRandomSong();
@@ -47,7 +48,12 @@ function setupModeButtons() {
         button.addEventListener("click", () => {
             buttons.forEach(btn => btn.classList.remove("active"));
             button.classList.add("active");
+            
             currentMode = button.dataset.mode;
+
+            if (typeof renderInventory === "function") {
+                renderInventory();
+            }
         });
     });
 }

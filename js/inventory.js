@@ -39,16 +39,24 @@ function renderInventory() {
 
     const songList = typeof songs !== "undefined" ? songs : [];
 
-    if (songList.length === 0) {
+    // 1. LỌC DANH SÁCH THEO THỂ LOẠI HIỆN TẠI (currentMode)
+    let filteredSongs = songList;
+    if (typeof currentMode !== "undefined") {
+        filteredSongs = songList.filter(song => song.genre === currentMode);
+    }
+
+    // 2. HIỂN THỊ THÔNG BÁO NẾU KHÔNG CÓ BÀI NÀO
+    if (filteredSongs.length === 0) {
         container.innerHTML = `
             <div style="grid-column: 1/-1; text-align: center; color: #64748b; padding: 40px;">
-                Không tìm thấy bài hát nào trong dữ liệu songs.js
+                Chưa có dữ liệu bài hát cho thể loại này.
             </div>
         `;
         return;
     }
 
-    songList.forEach(song => {
+    // 3. RENDER CÁC THẺ ĐÃ ĐƯỢC LỌC
+    filteredSongs.forEach(song => {
         const card = createInventoryCard(song);
         container.appendChild(card);
     });
@@ -98,6 +106,7 @@ function showResult(song) {
     const title = document.getElementById("modalTitle");
     const subtitle = document.getElementById("modalSubtitle");
     const rarity = document.getElementById("modalRarity");
+    const linkBtn = document.getElementById("modalLinkBtn"); // ĐÃ THÊM KHAI BÁO TẠI ĐÂY
 
     if (!modal) return;
 
@@ -123,6 +132,21 @@ function showResult(song) {
     
     if (rarity) {
         rarity.textContent = (song.rarity || "COMMON").toUpperCase();
+    }
+
+    // Xử lý nút Link YouTube
+    if (linkBtn) {
+        let url = song.youtube || "";
+        if (url && !url.startsWith("http://") && !url.startsWith("https://")) {
+            url = "https://" + url;
+        }
+        
+        if (url) {
+            linkBtn.href = url;
+            linkBtn.style.display = "inline-block"; // Hiện nút nếu có link
+        } else {
+            linkBtn.style.display = "none"; // Ẩn nút nếu không có link
+        }
     }
 
     modal.className = `modal-overlay rarity-${song.rarity || "blue"} show`;

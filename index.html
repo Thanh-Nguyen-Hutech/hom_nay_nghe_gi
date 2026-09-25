@@ -16,20 +16,30 @@
     <!-- =========================
          HEADER
     ========================== -->
-    <header class="header">
-        <h1>HÔM NAY NGHE GÌ :3</h1>
-        <p>ĐẠO HỮU XIN DỪNG BƯỚC</p>
+    <header class="app-header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>HÔM NAY NGHE GÌ :3</h1>
+                <p>ĐẠO HỮU XIN DỪNG BƯỚC</p>
+            </div>
+            
+            <nav class="header-nav">
+                <a href="#" class="github-link" target="_blank">
+                    ⭐ Star on GitHub
+                </a>
+            </nav>
+        </div>
     </header>
 
 
     <!-- =========================
-         MODE SELECTOR
+         MODE SELECTOR (THỂ LOẠI NHẠC)
     ========================== -->
     <section class="mode-section">
-        <button class="mode-btn active" data-mode="song">D</button>
-        <button class="mode-btn" data-mode="idol">C</button>
-        <button class="mode-btn" data-mode="group">M</button>
-        <button class="mode-btn" data-mode="album">M</button>
+        <button class="mode-btn active" data-mode="kpop">K-POP</button>
+        <button class="mode-btn" data-mode="vpop">V-POP</button>
+        <button class="mode-btn" data-mode="rapviet">VIET-RAP</button>
+        <button class="mode-btn" data-mode="usuk">US-UK</button>
     </section>
 
 
@@ -85,9 +95,31 @@
                 <h2 id="modalSubtitle">GROUP NAME</h2>
             </div>
 
-            <button id="acceptModalBtn" class="accept-btn" type="button">XÁC NHẬN</button>
+            <div class="modal-actions">
+                <a id="modalLinkBtn" href="#" target="_blank" class="link-btn">
+                    ▶ NGHE TRÊN YOUTUBE
+                </a>
+                <button id="acceptModalBtn" class="accept-btn" type="button">XÁC NHẬN</button>
+            </div>
         </div>
     </div>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="app-footer">
+        <div class="footer-container">
+            <p>&copy; 2026 K-Pop Randomizer. All rights reserved.</p>
+            
+            <div class="footer-links">
+                <a href="#">Về dự án</a>
+                <a href="#">Đóng góp bài hát</a>
+                <a href="#">Báo lỗi</a>
+            </div>
+            
+            <p class="footer-subtext">Designed with 💖 for K-Pop fans.</p>
+        </div>
+    </footer>
 
 
     <!-- =========================

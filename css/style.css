@@ -18,26 +18,139 @@ body {
 }
 
 /* =========================
-   HEADER
+   HEADER (GLASSMORPHISM)
 ========================= */
 
-.header {
-    text-align: center;
-    padding: 40px 20px 10px;
+.app-header {
+    background: rgba(15, 17, 21, 0.85); /* Nền tối trong suốt */
+    backdrop-filter: blur(12px); /* Hiệu ứng kính mờ */
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid #1a2230;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 16px 0;
 }
 
-.header h1 {
+.header-container {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
     margin: 0;
-    font-size: 38px;
-    font-weight: 800;
-    letter-spacing: 3px;
-    color: #f8fafc;
+    font-size: 26px;
+    font-weight: 900;
+    /* Hiệu ứng chữ màu gradient cực ngầu */
+    background: linear-gradient(135deg, #38bdf8, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
 }
 
-.header p {
-    margin-top: 8px;
+.logo p {
+    margin: 4px 0 0;
+    font-size: 12px;
+    color: #64748b;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.header-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.github-link {
+    padding: 8px 16px;
+    background: #1e293b;
+    color: #f8fafc;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 6px;
+    border: 1px solid #334155;
+    transition: all 0.2s ease;
+}
+
+.github-link:hover {
+    background: #334155;
+    border-color: #475569;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.app-footer {
+    background: #0b0e14;
+    border-top: 1px solid #1a2230;
+    padding: 40px 0 30px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.footer-container {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.app-footer p {
+    margin: 0;
     color: #94a3b8;
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.footer-links {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-links a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #60a5fa;
+    text-decoration: underline;
+}
+
+.footer-subtext {
+    font-size: 12px !important;
+    color: #475569 !important;
+    margin-top: 10px !important;
+}
+
+/* =========================
+   RESPONSIVE HEADER/FOOTER
+========================= */
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
 }
 
 /* =========================
@@ -298,6 +411,34 @@ body {
    MODAL POP-UP
 ========================================= */
 
+.modal-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.link-btn {
+    background: #ef4444;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 8px;
+    width: 100%;
+    transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.link-btn:hover {
+    background: #dc2626;
+    transform: translateY(-2px);
+}
+
+.link-btn:active {
+    transform: translateY(0);
+}
+
 .modal-overlay,
 .modal {
     position: fixed;
@@ -416,12 +557,11 @@ body {
 }
 
 .accept-btn {
-    margin-top: 18px;
     background: #2563eb;
     color: #ffffff;
     border: none;
     padding: 12px 24px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     border-radius: 8px;
     cursor: pointer;
